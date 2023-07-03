@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"><!-- 1 --> Km/h.
+    <input type="button" value="Verificar" onclick="calcular()"> <!-- 3 -->
+
+    <div id="res"></div> <!-- 2 -->
+
+    <script>
+        function calcular(){ /* 3 */
+            var tvel = window.document.querySelector('input#txtvel') /* 1 - pega o valor de txtvel */
+            var res = window.document.querySelector('div#res') /* 2 - pega o valor da DIV res */
+            var vel = Number(tvel.value) /* pega o valor de TVEL (string) e transfoma em número */
+            res.innerHTML = `<p>Sua velocidade é de ${vel}Km/h.</p>`
+            if (vel > 60){
+            res.innerHTML += `<p>Acima da velocidade permitida, você foi <strong>multado</strong>.</p>`
+        }else{
+            res.innerHTML += `<p>Dentro da velocidade permitida.</p>`
+        }
+        res.innerHTML += `<p>Dirija com cuidado.</p>` /* o sinal += serve para concatenar as frases */
+            
+        }
+
+        
+
+        
+    </script>
+    
+</body>
+</html>

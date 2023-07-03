@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt0br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+        
+    <section>
+        <div>
+            <p>Informe o ano de nascimento: <input type="number" name="ano" id="txtano"></p> <!-- o numero inserido entrara como texto-->
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" checked> <!-- Masc de MASCULINO-->
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="femi"> <!-- mesmo name senão as duas opções podem ficar marcadas simultaneamente-->
+                <label for="femi">Feminino</label>
+            </p>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+        </div>
+
+        <div id="resultado">
+            <p>Preencha o formulário para ver o resultado</p>
+            <!-- <img id="imagem" src="menino.png" alt="foto_menino"> -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Criado por Denis</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

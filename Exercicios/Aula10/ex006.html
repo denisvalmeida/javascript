@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="area"> 
+        <!-- PODEMOS COLOCAR OS ELEMENTOS A SEGUIR DENTRO DA DIV
+            onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"
+            a parte 'onclick="clicar()"' É UM EVENTO.
+            Isso tudo pode ser substituido dentro do Script por 'variavel.addEventListenner('evento', nome da função)'
+        -->
+        Interaja..
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar) /* Termos em parenteses separados por vírgula */
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText = 'Clicou!'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+        }
+        
+        function entrar(){
+            a.innerText = 'entrou'
+        }
+        function sair(){
+            a.innerText = 'saiu'
+            a.style.background = 'gray'
+            a.style.color = 'white'
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(52, 184, 140);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    color: white
+}
+
+section{
+    width: 500px;
+    background-color: aliceblue;
+    text-align: left;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.363);
+
+}
+
+#lista{
+    width: 150px;
+}
+
+footer{
+    color: white;
+}

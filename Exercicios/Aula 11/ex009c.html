@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições 3</title>
+</head>
+<body>
+    <h1>Testando condições</h1>
+    <p>Informe a sua nacionalidade <input type="text" name="nacionalidade" id="nacionalidade"></p>
+    <input type="button" value="consulta" onclick="verificar()">
+
+    <div id="resultado"></div>
+
+    <script>
+        function verificar(){
+            var nacio = window.document.querySelector('input#nacionalidade').value
+            var res = window.document.querySelector('div#resultado')
+            var mensagem = `<p>O seu país de origem é ${nacio}</p>`
+
+            if (nacio.toLowerCase() === 'brasil'){
+                mensagem += 'Você é brasileiro'
+            }else{
+                
+            }
+            res.innerHTML = mensagem
+
+        }
+    </script>
+    
+</body>
+</html>
